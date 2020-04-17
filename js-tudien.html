@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let english = ["apple", "lemon", "orange", "banana"];
+    let vnese = ["táo", "chanh", "cam","chuối"];
+    let N = prompt("Nhap tu can tra cuu (VN):");
+    let order = false;
+    for (let i = 0; i < vnese.length; i++) {
+        if (N == vnese[i]) {
+            order = true;
+            alert("Từ giải nghĩa là: " + english[i]);
+        }
+    }
+    if (!order) {
+        alert('K co trong tu dien Eng');
+    }
+
+</script>
+</body>
+</html>
